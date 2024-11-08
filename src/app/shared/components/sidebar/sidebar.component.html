@@ -3,6 +3,7 @@
   <hr class="text-light" />
   <div class="list-group list-reset">
     <button
+    (click)="ponerGifsDeNuevo(tag)"
       *ngFor="let tag of mostrarListado()"
       class="list-group-item list-group-item-action"
     >
