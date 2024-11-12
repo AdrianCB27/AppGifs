@@ -13,8 +13,9 @@ constructor(private gifService: GifsService) {}
 mostrarListado(){
   return this.gifService.tagHistory;
 }
-ponerGifsDeNuevo(titulo:string){
-  this.gifService.searchTag(titulo)
+searchTag(tag:string):void{
+  this.gifService.searchTag(tag);
+  console.log(tag);
 }
 
 
